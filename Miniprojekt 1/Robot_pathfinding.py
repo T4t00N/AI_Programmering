@@ -7,10 +7,10 @@ pygame.init()
 pygame.font.init
 pygame.display.set_caption("Path_finding_robot")
 
-screen_witdh, screen_height=600, 600
-center = (screen_witdh//2, screen_height//2)
+screen_width, screen_height=600, 600
+center = (screen_width//2, screen_height//2)
 tile_size = 10
-grid_width,grid_height = screen_witdh//tile_size, screen_height//tile_size
+grid_width,grid_height = screen_width//tile_size, screen_height//tile_size
 blue = (0, 0, 255)
 green = (0, 255, 0)
 
@@ -18,13 +18,12 @@ green = (0, 255, 0)
 
 def main():
 
-    screen = pygame.display.set_mode((screen_witdh, screen_height)) #Set display size
+    screen = pygame.display.set_mode((screen_width, screen_height)) #Set display size
     screen.fill((255, 255, 255)) #Fill screen with background color
 
     map(screen)
 
-
-
+    
 
 
 
